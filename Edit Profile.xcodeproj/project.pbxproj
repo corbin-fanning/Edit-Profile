@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE04B6CF2BD707C50047CED8 /* EditNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04B6CE2BD707C50047CED8 /* EditNameView.swift */; };
+		CEB527652BD422CC004D9E7D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB527642BD422CC004D9E7D /* Color.swift */; };
+		CECAFB272BD5CE3D00523AE4 /* Andika-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CECAFB262BD5CE3D00523AE4 /* Andika-Bold.ttf */; };
+		CECAFB292BD5CE5300523AE4 /* Andika-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CECAFB282BD5CE5300523AE4 /* Andika-BoldItalic.ttf */; };
+		CECAFB2B2BD5CF2600523AE4 /* Andika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CECAFB2A2BD5CF2600523AE4 /* Andika-Regular.ttf */; };
 		CEED594D2BD19A8B004B9C81 /* Edit_ProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED594C2BD19A8B004B9C81 /* Edit_ProfileApp.swift */; };
 		CEED594F2BD19A8B004B9C81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED594E2BD19A8B004B9C81 /* ContentView.swift */; };
 		CEED59512BD19A8D004B9C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEED59502BD19A8D004B9C81 /* Assets.xcassets */; };
 		CEED59542BD19A8D004B9C81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEED59532BD19A8D004B9C81 /* Preview Assets.xcassets */; };
+		CEED595B2BD1A33B004B9C81 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED595A2BD1A33B004B9C81 /* HeaderView.swift */; };
+		CEED595D2BD1A522004B9C81 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED595C2BD1A522004B9C81 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE04B6CE2BD707C50047CED8 /* EditNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameView.swift; sourceTree = "<group>"; };
+		CEB527642BD422CC004D9E7D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CECAFB262BD5CE3D00523AE4 /* Andika-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andika-Bold.ttf"; sourceTree = "<group>"; };
+		CECAFB282BD5CE5300523AE4 /* Andika-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andika-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CECAFB2A2BD5CF2600523AE4 /* Andika-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andika-Regular.ttf"; sourceTree = "<group>"; };
+		CECAFB2C2BD5D04900523AE4 /* Edit-Profile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Edit-Profile-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CEED59492BD19A8B004B9C81 /* Edit Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Edit Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEED594C2BD19A8B004B9C81 /* Edit_ProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit_ProfileApp.swift; sourceTree = "<group>"; };
 		CEED594E2BD19A8B004B9C81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEED59502BD19A8D004B9C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEED59532BD19A8D004B9C81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEED595A2BD1A33B004B9C81 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		CEED595C2BD1A522004B9C81 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CECAFB252BD5CE0A00523AE4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CECAFB282BD5CE5300523AE4 /* Andika-BoldItalic.ttf */,
+				CECAFB2A2BD5CF2600523AE4 /* Andika-Regular.ttf */,
+				CECAFB262BD5CE3D00523AE4 /* Andika-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		CEED59402BD19A8B004B9C81 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +76,14 @@
 		CEED594B2BD19A8B004B9C81 /* Edit Profile */ = {
 			isa = PBXGroup;
 			children = (
+				CECAFB2C2BD5D04900523AE4 /* Edit-Profile-Info.plist */,
 				CEED594C2BD19A8B004B9C81 /* Edit_ProfileApp.swift */,
 				CEED594E2BD19A8B004B9C81 /* ContentView.swift */,
+				CEED595A2BD1A33B004B9C81 /* HeaderView.swift */,
+				CEED595C2BD1A522004B9C81 /* FooterView.swift */,
+				CE04B6CE2BD707C50047CED8 /* EditNameView.swift */,
+				CEB527642BD422CC004D9E7D /* Color.swift */,
+				CECAFB252BD5CE0A00523AE4 /* Fonts */,
 				CEED59502BD19A8D004B9C81 /* Assets.xcassets */,
 				CEED59522BD19A8D004B9C81 /* Preview Content */,
 			);
@@ -125,6 +156,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECAFB2B2BD5CF2600523AE4 /* Andika-Regular.ttf in Resources */,
+				CECAFB272BD5CE3D00523AE4 /* Andika-Bold.ttf in Resources */,
+				CECAFB292BD5CE5300523AE4 /* Andika-BoldItalic.ttf in Resources */,
 				CEED59542BD19A8D004B9C81 /* Preview Assets.xcassets in Resources */,
 				CEED59512BD19A8D004B9C81 /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEED594F2BD19A8B004B9C81 /* ContentView.swift in Sources */,
+				CEED595D2BD1A522004B9C81 /* FooterView.swift in Sources */,
+				CEED595B2BD1A33B004B9C81 /* HeaderView.swift in Sources */,
+				CE04B6CF2BD707C50047CED8 /* EditNameView.swift in Sources */,
+				CEB527652BD422CC004D9E7D /* Color.swift in Sources */,
 				CEED594D2BD19A8B004B9C81 /* Edit_ProfileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +313,8 @@
 				DEVELOPMENT_TEAM = S6YR638GPD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Edit-Profile-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "Andika-Bold.ttf";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +344,8 @@
 				DEVELOPMENT_TEAM = S6YR638GPD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Edit-Profile-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "Andika-Bold.ttf";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

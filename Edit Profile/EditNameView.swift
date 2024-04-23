@@ -8,8 +8,48 @@
 import SwiftUI
 
 struct EditNameView: View {
+    
+    @State var name: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            HStack {
+                TextField("Type a new name", text: $name)
+                    .padding()
+                    .background(Color.white.opacity(0.75)) // Light background to see the TextField
+                    .foregroundColor(.black) // Text color
+                    .cornerRadius(5)
+                    .padding() // Padding around the TextField
+                    .font(.custom("Andika", size: 16))
+                
+                
+                VStack {
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Text("Rename")
+                            .foregroundStyle(Color.white)
+                            .font(.custom("Andika", size: 16))
+                            .bold()
+                    })
+                    .padding()
+                    .background(Color.lynkDarkBlue)
+                    .cornerRadius(10)
+                    
+                    
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Text("Go Back")
+                            .foregroundStyle(Color.black)
+                            .font(.custom("Andika", size: 16))
+                            .bold()
+                            .padding()
+                    })
+                    
+                }
+                .offset(y: 30)
+            
+            }
+            .padding()
+            .cornerRadius(10)
+        }
     }
 }
 
